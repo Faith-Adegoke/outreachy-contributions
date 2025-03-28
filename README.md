@@ -40,34 +40,21 @@ pip install PyTDC
 
 ### 📥 Downloading the Dataset
 To download and save the dataset to the _data_ folder, run the next block of code.
-```py
+```bash
 python ./scripts/data_download.py
 ```
 
 ## Featurisation
 **Model:** The Continuous and data-driven descriptors representation model from ersilia hub will be used for featurisation. Details about the model can be found [here](https://github.com/ersilia-os/eos7a04).
 
-**Rationale:** 
- Encodes Molecular Information in a Dense, Continuous Space
-
-Unlike sparse binary fingerprints (e.g., Morgan fingerprints), this neural machine translation-based featurizer learns a compact, meaningful representation of molecular structures.
-
-2️⃣ Captures Chemical and Structural Relationships
-
-Since it is trained on IUPAC to SMILES translation, the intermediate representation contains information about:
-
-Molecular connectivity
-
-Functional groups
-
-Chemical properties
-
-3️⃣ Useful for Deep Learning Models
-
-These low-dimensional continuous vectors are well-suited for deep learning models like Graph Neural Networks (GNNs), Transformers, or Recurrent Neural Networks (RNNs).
-
-4️⃣ Generalizes Well Across Drug Datasets
-
-Pretrained on ChEMBL and ZINC, it can generalize better to unseen molecules in DrugBank, making it useful for DDI tasks where drugs might be novel.
+**Rationale of choice:** 
+1. The model extracts meaningful molecular descriptors, on a large dataset of molecular structures which perfectly describes the dataset used in this project.
+2. It can generalize better to unseen molecules because it was pretrained on ChEMBL and ZINC and it is less prone to overfitting.
+3. The performance is consistent in all experiments.
 
 
+
+------
+## References
+Robin Winter, Floriane Montanari, Frank Noé, Djork-Arné Clevert, Learning continuous and data-driven molecular descriptors by translating equivalent chemical representations. 10.1039/c8sc04175j
+Turon, G., Arora, D., & Duran-Frigola, M. Ersilia Model Hub: A repository of AI/ML models for neglected tropical diseases (Version 0.1.42). Zenodo. https://doi.org/10.5281/zenodo.7274645
