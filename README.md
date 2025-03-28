@@ -57,4 +57,5 @@ python ./scripts/data_download.py
 ------
 ## References
 Robin Winter, Floriane Montanari, Frank Noé, Djork-Arné Clevert, Learning continuous and data-driven molecular descriptors by translating equivalent chemical representations. 10.1039/c8sc04175j
+
 Turon, G., Arora, D., & Duran-Frigola, M. Ersilia Model Hub: A repository of AI/ML models for neglected tropical diseases (Version 0.1.42). Zenodo. https://doi.org/10.5281/zenodo.7274645
