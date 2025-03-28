@@ -43,6 +43,6 @@ pip install PyTDC
 ### 📥 Downloading the Dataset
 To download and save the dataset to the _data_ folder, run the next block of code.
 ```py
-python ./scripts/data_download.pynb
+python ./scripts/data_download.py
 ```
 
